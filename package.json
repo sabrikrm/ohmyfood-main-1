@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfood project",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch sass/index.scss:css/style.css"
+  },
+  "author": "sabri karoumi",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}
