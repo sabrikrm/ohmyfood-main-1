@@ -1,0 +1,28 @@
+.city {
+    display: flex;
+   background-color: #EAEAEA;
+    justify-content: center;
+    align-items: center;
+  
+    height: 50px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  
+    &__search {
+        margin-left: 70px;
+    }
+  
+    .search-input {
+        padding-left: 15px;
+        width: auto;
+        border: none;
+        outline: none;
+        background-color: #EAEAEA;
+        font-size: 16px;
+        color: black;
+    }
+  
+    .search-input::placeholder {
+        color: black;
+    }
+  }
+  
