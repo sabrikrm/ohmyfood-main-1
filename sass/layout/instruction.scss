@@ -3,7 +3,7 @@
 @use "../utils/breakpoint.scss";
 @use "../utils/padding.scss";
 
-.functioning {
+.instruction {
     padding: 48px 0;
 
     @media (min-width: breakpoint.$medium-screen) {
