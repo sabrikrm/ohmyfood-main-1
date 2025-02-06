@@ -1,15 +1,14 @@
 @use "../utils/color.scss";
 @use "../utils/box-shadow.scss";
 @use "../utils/breakpoint.scss";
-@use "../utils/padding.scss";
+
 
 .instruction {
     padding: 48px 0;
+    padding-left: 8%;
+    width: 90%;
 
-    @media (min-width: breakpoint.$medium-screen) {
-        @include padding.padding-main;
-    }
-
+  
     & ol {
         display: flex;
         flex-direction: column;

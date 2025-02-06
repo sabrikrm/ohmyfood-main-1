@@ -94,16 +94,12 @@ header img {
 }
 .explorer button:hover {
   filter: brightness(1.1);
-  box-shadow: 0px 6px 6px 1px rgba(0, 0, 0, 0.2509803922);
 }
 
 .instruction {
   padding: 48px 0;
-}
-@media (min-width: 768px) {
-  .instruction {
-    padding: 4vh 5vw;
-  }
+  padding-left: 8%;
+  width: 90%;
 }
 .instruction ol {
   display: flex;
@@ -159,11 +155,10 @@ header img {
 .restaurant {
   background-color: #F6F6F6;
   padding-top: 50px;
+  padding: 0px 8%;
 }
-@media (min-width: 768px) {
-  .restaurant {
-    padding: 4vh 5vw;
-  }
+.restaurant h2 {
+  padding-top: 30px;
 }
 .restaurant .restaurant-cards {
   display: grid;
@@ -176,7 +171,7 @@ header img {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
-    gap: 4vw;
+    gap: 50px;
   }
 }
 .restaurant .restaurant-cards .sticker-new {
@@ -192,7 +187,7 @@ header img {
   width: 80px;
   background-color: #99E2D0;
   right: 15px;
-  top: 15px;
+  top: 5px;
   border-radius: 2px;
 }
 .restaurant .card {
@@ -200,7 +195,6 @@ header img {
   height: auto;
   border: 1px solid #eaeaea;
   border-radius: 15px;
-  overflow: hidden;
   position: relative;
 }
 .restaurant .card .card-img img {
