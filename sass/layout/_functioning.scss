@@ -1,0 +1,66 @@
+@use "../utils/color.scss";
+@use "../utils/box-shadow.scss";
+@use "../utils/breakpoint.scss";
+@use "../utils/padding.scss";
+
+.functioning {
+    padding: 48px 0;
+
+    @media (min-width: breakpoint.$medium-screen) {
+        @include padding.padding-main;
+    }
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        list-style: none;
+        counter-reset: count;
+        padding-right: 40px;
+        @media (min-width: breakpoint.$large-screen) {
+            flex-direction: row;
+            padding-left: 25px;
+        }
+    }
+
+    & li {
+        position: relative;
+        text-align: center;
+        background-color: color.$background-color;
+        @include box-shadow.base-shadow;
+        width: auto;
+        border-radius: 20px;
+        padding: 1.5rem 0 1.5rem 0;
+
+        @media (min-width: breakpoint.$medium-screen) {
+            flex-grow: 1;
+        }
+
+
+        &::before {
+            content: counter(count);
+            counter-increment: count;
+            position: absolute;
+            left: -12px;
+            width: 24px;
+            height: 24px;
+            background-color: color.$primary-color;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        &:nth-child(3)> :first-child {
+            color: color.$primary-color;
+        }
+    }
+
+    & i {
+        margin: 0 27px 0 15px;
+
+        color: color.$grey-alternate-color;
+    }
+}

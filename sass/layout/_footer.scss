@@ -1,0 +1,54 @@
+@use "../utils/color.scss";
+@use "../utils/breakpoint.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: color.$grey-color;
+    padding-left: 25px;
+    padding-bottom: 20px;
+
+    @media (min-width: breakpoint.$medium-screen) {
+        flex-direction: row-reverse;
+        justify-content: right;
+        gap: 30px;
+        padding: 64px 30px 30px 0;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+
+        @media (min-width: breakpoint.$medium-screen) {
+            flex-direction: row;
+        }
+
+    }
+
+    & img {
+        height: 27px;
+        width: 137px;
+        filter: invert(1) brightness(2);
+        margin-top: 22px;
+        @media (min-width: breakpoint.$medium-screen) {
+            transform: translateY(-50%);
+        }
+    }
+
+    & p,
+    a {
+        display: block;
+        margin: 0;
+        padding: 5px;
+        color: white;
+        @media (min-width: breakpoint.$medium-screen) {
+            padding-right: 1vw;
+        }
+    }
+
+    & i {
+        padding-right: 10px;
+    }
+
+}

@@ -1,0 +1,28 @@
+@use "../utils/gradient.scss";
+@use "../utils/color.scss";
+@use "../utils/box-shadow.scss";
+@use "../components/btn.scss";
+
+
+.explorer {
+    text-align: center;
+    background-color: color.$background-color;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    & h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    & p {
+        font-size: 18px;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    & button {
+        @include btn.button;
+    }
+}

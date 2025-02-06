@@ -1,0 +1,33 @@
+@use "../utils/gradient.scss";
+@use "../utils/font-awesome.scss";
+
+@mixin heart  {
+    @include font-awesome.font-awesome;
+    font-weight: 400;
+    content: "\f004";
+    font-size: 22px;
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+    opacity: 1;
+}
+
+@mixin animated {
+    position: relative;
+
+    &::before {
+        @include heart;
+    }
+
+    &::after {
+        
+        @include gradient.linearGradient;
+        opacity: 0;
+        color: transparent;
+        font-weight: 900;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+}
