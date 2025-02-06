@@ -31,9 +31,7 @@
         width: 137px;
         filter: invert(1) brightness(2);
         margin-top: 22px;
-        @media (min-width: breakpoint.$medium-screen) {
-            transform: translateY(-50%);
-        }
+        
     }
 
     & p,
@@ -42,9 +40,6 @@
         margin: 0;
         padding: 5px;
         color: white;
-        @media (min-width: breakpoint.$medium-screen) {
-            padding-right: 1vw;
-        }
     }
 
     & i {

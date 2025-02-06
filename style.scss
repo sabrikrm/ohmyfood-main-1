@@ -1,38 +1,38 @@
 /* BASE */
-/* base */
+
 @use "./sass/base/base.scss";
 
 /* COMPONENTS */
-/* arrow */
 
-/* btn */
+
+
 @use "./sass/components/btn.scss";
 
 
 
 /* LAYOUT */
-/*header */
+
 @use "./sass/layout/header.scss";
-/*section city */
+
 @use "./sass/layout/city.scss";
-/* section explorer */
+
 @use "./sass/layout/explorer.scss";
-/* section functioning */
+
 @use "./sass/layout/functioning.scss";
-/* section restaurant */
+
 @use "./sass/layout/restaurants.scss";
-/* footer */
+
 @use "./sass/layout/footer.scss";
 
 
 
 
 /* UTILS */
-/* box-shadow */
+
 @use "./sass/utils/box-shadow.scss";
-/*color */
+
 @use "./sass/utils/color.scss";
-/* font-awesome */
+
 @use "./sass/utils/font-awesome.scss";
-/* gradient */
+
 @use "./sass/utils/gradient.scss";

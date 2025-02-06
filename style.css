@@ -1,5 +1,4 @@
 /* BASE */
-/* base */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 /* responsive breakpoiint */
@@ -26,10 +25,7 @@ i {
 }
 
 /* COMPONENTS */
-/* arrow */
-/* btn */
 /* LAYOUT */
-/*header */
 header {
   display: flex;
   justify-content: center;
@@ -45,7 +41,6 @@ header img {
   height: auto;
 }
 
-/*section city */
 .city {
   display: flex;
   background-color: #EAEAEA;
@@ -70,10 +65,7 @@ header img {
   color: black;
 }
 
-/* section explorer */
 /* COMPONENTS */
-/* arrow */
-/* btn */
 .explorer {
   text-align: center;
   background-color: #F6F6F6;
@@ -105,7 +97,6 @@ header img {
   box-shadow: 0px 6px 6px 1px rgba(0, 0, 0, 0.2509803922);
 }
 
-/* section functioning */
 .functioning {
   padding: 48px 0;
 }
@@ -165,7 +156,6 @@ header img {
   color: #7E7E7E;
 }
 
-/* section restaurant */
 .restaurant {
   background-color: #F6F6F6;
   padding-top: 50px;
@@ -283,7 +273,6 @@ header img {
   font-size: 25px;
 }
 
-/* footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -315,11 +304,6 @@ header img {
   filter: invert(1) brightness(2);
   margin-top: 22px;
 }
-@media (min-width: 768px) {
-  .footer img {
-    transform: translateY(-50%);
-  }
-}
 .footer p,
 .footer a {
   display: block;
@@ -327,20 +311,10 @@ header img {
   padding: 5px;
   color: white;
 }
-@media (min-width: 768px) {
-  .footer p,
-  .footer a {
-    padding-right: 1vw;
-  }
-}
 .footer i {
   padding-right: 10px;
 }
 
 /* UTILS */
-/* box-shadow */
-/*color */
-/* font-awesome */
-/* gradient */
 
 /*# sourceMappingURL=style.css.map */
