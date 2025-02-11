@@ -1,0 +1,12 @@
+@use "../utils/font-awesome.scss";
+
+@mixin arrow {
+    @include font-awesome.font-awesome;
+    font-weight: 900;
+    content: "\f060";
+    font-size: 22px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    opacity: 1;
+}

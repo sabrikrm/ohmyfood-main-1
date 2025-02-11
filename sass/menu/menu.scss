@@ -3,9 +3,15 @@
 @use "../utils/gradient.scss";
 @use "../utils/box-shadow.scss";
 @use "../components/btn.scss";
-
+@use "../components/arrow.scss";
 @use "../utils/breakpoint.scss";
 
+
+.arrow {
+    &::before {
+        @include arrow.arrow;
+    }
+}
 
 .restaurant-img {
     width: 100%;
@@ -88,7 +94,7 @@
             font-weight: 300;
             font-size: 16px;
             position: relative;
-
+        
             &::after {
                 content: "";
                 position: absolute;
@@ -99,6 +105,7 @@
                 background-color: color.$green-color;
             }
         }
+        
     }
 
     &__items {
@@ -143,7 +150,7 @@
             height: 100%;
             margin-right: -$check-width;
             width: $check-width;
-            transition: margin-right 0.3s ease-in-out;
+            transition: margin-right 0.10s ease-in-out;
 
             i {
                 color: white;
