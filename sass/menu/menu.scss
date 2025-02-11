@@ -121,7 +121,7 @@
         @include box-shadow.base-shadow;
          //animation delay//
         @include effect.delay-appear;
-        animation: appear 1s;
+        animation: appear 2s;
         animation-fill-mode: both;
 
 

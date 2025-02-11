@@ -2,7 +2,7 @@
 @use "../utils/gradient.scss";
 @use "../components/heart.scss";
 @use "../utils/breakpoint.scss";
-@use "../utils/padding.scss";
+
 
 .restaurant {
     background-color: color.$background-color;
@@ -44,16 +44,14 @@
             border-radius: 2px;
 
         }
-
-        
     }
-     
 
     & .card {
         width: auto;
         height: auto;
         border: 1px solid #eaeaea;
         border-radius: 15px;
+        overflow: hidden;
         position: relative;
 
         & .card-img {
@@ -101,13 +99,4 @@
             }
         }
     }
-    .restaurant-card__like {
-       
-            position: absolute;
-            top: 76%;
-            right: 7%;
-            font-size: 25px;
-        
-    }
-    
 }
