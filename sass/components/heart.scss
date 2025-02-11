@@ -1,26 +1,26 @@
 @use "../utils/gradient.scss";
 @use "../utils/font-awesome.scss";
 
-@mixin heart  {
+@mixin heart ($right: 25px, $bottom: 33px) {
     @include font-awesome.font-awesome;
     font-weight: 400;
     content: "\f004";
     font-size: 22px;
     position: absolute;
-    right: 25px;
-    bottom: 33px;
+    right: $right;
+    bottom: $bottom;
     opacity: 1;
 }
 
-@mixin animated {
+@mixin animated ($right, $bottom){
     position: relative;
 
     &::before {
-        @include heart;
+        @include heart($right, $bottom);
     }
 
     &::after {
-        
+        @include heart ($right, $bottom);
         @include gradient.linearGradient;
         opacity: 0;
         color: transparent;

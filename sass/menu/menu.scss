@@ -1,0 +1,170 @@
+@use "../utils/color.scss";
+@use "../components/heart.scss";
+@use "../utils/gradient.scss";
+@use "../utils/box-shadow.scss";
+@use "../components/btn.scss";
+
+@use "../utils/breakpoint.scss";
+
+
+.restaurant-img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+
+.menu-main {
+    margin-top: -35px;
+    background-color: color.$background-color;
+
+    @media (min-width: breakpoint.$medium-screen) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        transform: translateX(13%);
+        border-radius: 23px 23px 0 0;
+    }
+
+    h2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 28px;
+        margin: 0;
+        font-family: "Shrikhand", "serif";
+        border-radius: 23px 23px 0 0;
+        padding: 32px 17px 0 17px;
+        background-color: color.$background-color;
+
+        @media (min-width: breakpoint.$medium-screen) {
+            width: auto;
+        }
+    }
+
+    .heart {
+        @include heart.animated(40px, 10px);
+        @media (min-width: breakpoint.$medium-screen) {
+            @include heart.animated(-200px, 10px);
+        }
+    }
+
+    & button {
+        @include btn.button;
+        cursor: pointer;
+    }
+}
+
+.order {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
+.list {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    padding: 40px 13px 40px 13px;
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        overflow: hidden;
+
+        @media (min-width: breakpoint.$medium-screen) {
+            width: 50vw;
+        }
+
+
+        & .list__items:last-child {
+            box-shadow: none;
+        }
+
+        h3 {
+            margin: 0;
+            margin-bottom: 20px;
+            font-weight: 300;
+            font-size: 16px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 27px;
+                left: 0;
+                height: 3px;
+                width: 40px;
+                background-color: color.$green-color;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        @include box-shadow.base-shadow;
+        
+        animation: appear 1s;
+        animation-fill-mode: both;
+
+
+        &__content {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+
+            h4 {
+                font-size: 18px;
+                margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &__check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            $check-width: 59px;
+            background-color: color.$green-color;
+            height: 100%;
+            margin-right: -$check-width;
+            width: $check-width;
+            transition: margin-right 0.3s ease-in-out;
+
+            i {
+                color: white;
+            }
+        }
+
+        &:hover &__check {
+            margin-right: 0;
+        }
+
+        &>*:not(:last-child) {
+            padding: 13.5px 15px 13.5px 15px;
+        }
+    }
+
+    &__price {
+        padding-right: 15px;
+        margin: 0;
+        color: color.$grey-color;
+        font-weight: bold;
+        margin-left: auto;
+    }
+
+}
