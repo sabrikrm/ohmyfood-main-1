@@ -5,6 +5,7 @@
 @use "../components/btn.scss";
 @use "../components/arrow.scss";
 @use "../utils/breakpoint.scss";
+@use "../utils/effect.scss";
 
 
 .arrow {
@@ -15,7 +16,7 @@
 
 .restaurant-img {
     width: 100%;
-    height: 35vh;
+    height: 383px;
     object-fit: cover;
 }
 
@@ -80,7 +81,7 @@
         overflow: hidden;
 
         @media (min-width: breakpoint.$medium-screen) {
-            width: 50vw;
+            width: 634px;
         }
 
 
@@ -117,7 +118,8 @@
         overflow: hidden;
         cursor: pointer;
         @include box-shadow.base-shadow;
-        
+         //animation delay//
+        @include effect.delay-appear;
         animation: appear 1s;
         animation-fill-mode: both;
 
