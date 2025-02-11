@@ -550,7 +550,7 @@ header img {
 .list__items > *:not(:last-child) {
   padding: 13.5px 15px 13.5px 15px;
 }
-.list__price {
+.list__prix {
   padding-right: 15px;
   margin: 0;
   color: #353535;
