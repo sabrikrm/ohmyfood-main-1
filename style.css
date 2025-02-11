@@ -105,7 +105,7 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  list-style: none;
+  menu-style: none;
   counter-reset: count;
   padding-right: 40px;
 }
@@ -496,35 +496,35 @@ header img {
   text-align: center;
 }
 
-.list {
+.menu {
   display: grid;
   justify-content: center;
   grid-template-rows: auto auto;
   gap: 40px;
   padding: 40px 13px 40px 13px;
 }
-.list__category {
+.menu__category {
   display: flex;
   flex-direction: column;
   gap: 15px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .list__category {
+  .menu__category {
     width: 634px;
   }
 }
-.list__category .list__items:last-child {
+.menu__category .menu__items:last-child {
   box-shadow: none;
 }
-.list__category h3 {
+.menu__category h3 {
   margin: 0;
   margin-bottom: 20px;
   font-weight: 300;
   font-size: 16px;
   position: relative;
 }
-.list__category h3::after {
+.menu__category h3::after {
   content: "";
   position: absolute;
   top: 27px;
@@ -533,7 +533,7 @@ header img {
   width: 40px;
   background-color: #99E2D0;
 }
-.list__items {
+.menu__items {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -545,35 +545,35 @@ header img {
   animation: appear 1s;
   animation-fill-mode: both;
 }
-.list__items:nth-child(2) {
+.menu__items:nth-child(2) {
   animation-delay: 300ms;
 }
-.list__items:nth-child(3) {
+.menu__items:nth-child(3) {
   animation-delay: 450ms;
 }
-.list__items:nth-child(4) {
+.menu__items:nth-child(4) {
   animation-delay: 600ms;
 }
-.list__items:nth-child(5) {
+.menu__items:nth-child(5) {
   animation-delay: 750ms;
 }
-.list__items__content {
+.menu__items__content {
   flex: 1;
   overflow: hidden;
   white-space: nowrap;
 }
-.list__items__content h4 {
+.menu__items__content h4 {
   font-size: 18px;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.list__items__content p {
+.menu__items__content p {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.list__items__check {
+.menu__items__check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -583,16 +583,16 @@ header img {
   width: 59px;
   transition: margin-right 0.1s ease-in-out;
 }
-.list__items__check i {
+.menu__items__check i {
   color: white;
 }
-.list__items:hover .list__items__check {
+.menu__items:hover .menu__items__check {
   margin-right: 0;
 }
-.list__items > *:not(:last-child) {
+.menu__items > *:not(:last-child) {
   padding: 13.5px 15px 13.5px 15px;
 }
-.list__prix {
+.menu__prix {
   padding-right: 15px;
   margin: 0;
   color: #353535;
