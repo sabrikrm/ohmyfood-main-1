@@ -10,6 +10,7 @@
     right: $right;
     bottom: $bottom;
     opacity: 1;
+    cursor: pointer;
 }
 
 @mixin animated ($right, $bottom){
