@@ -379,6 +379,7 @@ header img {
 }
 .menu-main .heart {
   position: relative;
+  margin-right: 35px;
 }
 .menu-main .heart::before {
   display: inline-block;
